@@ -1,0 +1,32 @@
+doctype html
+
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.js")
+    script(src="https://cdn.firebase.com/js/client/2.4.0/firebase.js")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation-flex.css")
+    link(rel="stylesheet" href="css/main.css")
+    script(src="../js/index.js")
+    title= pageTitle
+  body
+    // Container
+    .row
+      .large-12.column.text-center
+        .row
+          .large-6.large-offset-3.column
+           
+            #signup-form
+              h1 Sign up for our Newsletter 
+              form
+                input(type="text", id="name", placeholder="Enter your wonderful name!!")
+                input(type="email", id="email", placeholder="Email")
+                input(type="submit", id="register", class="button", value="Get Started!")
+          
+            p#status
+            
+            hr
+            p Created by
+            a(href="http://www.twitter.com/thejoshbivens") @thejoshbivens 
+            span &nbsp; &amp; &nbsp;
+            a(href="http://www.twitter.com/iheartkode") @iheartkode
